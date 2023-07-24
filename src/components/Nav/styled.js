@@ -17,6 +17,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 70px;
   width: 1280px;
   & > *:first-child {
     display: flex;
@@ -38,23 +39,12 @@ export const LogoImg = styled.img.attrs({
   cursor: pointer;
 `;
 
-export const NavList = styled.ul`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-  width: fit-content;
-  > * {
-    cursor: pointer;
-  }
-  > *:first-child {
+export const NavItem = styled.div`
+  position: relative;
+  cursor: pointer;
+  &:first-of-type {
     margin-bottom: 10px;
   }
-`;
-
-export const NavItem = styled.li`
-  position: relative;
 `;
 
 export const Tooltip = styled.div`
@@ -91,6 +81,9 @@ export const Tooltip = styled.div`
 export const NavItemText = styled.div`
   width: fit-content;
   margin: 5px 10px;
+  &:hover {
+    color: #ff7425;
+  }
 `;
 
 export const WalletButton = styled.button`
