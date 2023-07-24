@@ -48,6 +48,46 @@ export const NavList = styled.ul`
   }
 `;
 
+export const NavItem = styled.li`
+  position: relative;
+`;
+
+export const Tooltip = styled.div`
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: max-content;
+  height: 48px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 4.584px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  border: 2px solid #ff7425;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1;
+  ${NavItem}:hover & {
+    opacity: 1;
+    visibility: visible;
+  }
+`;
+
+export const NavItemText = styled.div`
+  width: fit-content;
+  margin: 5px 10px;
+`;
+
 export const WalletButton = styled.button`
   width: 112px;
   height: 48px;
