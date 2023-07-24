@@ -19,6 +19,8 @@ export const Container = styled.div`
   align-items: center;
   width: 1280px;
   & > *:first-child {
+    display: flex;
+    align-items: flex-end;
     margin-right: auto;
   }
   & > *:last-child {
