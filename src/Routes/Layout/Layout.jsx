@@ -5,8 +5,8 @@ import { Container, Root } from "./styled";
 export const Layout = () => {
   return (
     <Root>
+      <Nav />
       <Container>
-        <Nav />
         <Outlet />
       </Container>
     </Root>

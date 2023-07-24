@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: transparent;
   }
 
-  a {
+  a, ul, li {
     all: unset;
   }
 
