@@ -6,7 +6,7 @@ export const Root = styled.nav`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 107px;
+  height: 100px;
   font-family: "Do Hyeon", "Noto Sans KR", sans-serif;
   font-size: 30px;
   background: #fff;
@@ -45,6 +45,9 @@ export const NavList = styled.ul`
   width: fit-content;
   > * {
     cursor: pointer;
+  }
+  > *:first-child {
+    margin-bottom: 10px;
   }
 `;
 
