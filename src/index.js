@@ -4,6 +4,7 @@ import GlobalStyle from "./GlobalStyle";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./Routes/Layout";
 import { Home } from "./page/Home";
+import { Behind } from "./page/Behind";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/behind" element={<Behind/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
