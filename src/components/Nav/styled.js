@@ -81,6 +81,7 @@ export const Tooltip = styled.div`
 export const NavItemText = styled.div`
   width: fit-content;
   margin: 5px 10px;
+  color: #666;
   &:hover {
     color: #ff7425;
   }

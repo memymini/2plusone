@@ -20,15 +20,13 @@ export const Nav = () => {
         {navItems.map((item) => (
           <NavItem key={item.link}>
             {item.text}
-            {item.details.length > 0 && (
-              <Tooltip>
-                {item.details.map((detail, index) => (
-                  <NavItemText key={`${detail.src}_${index}`}>
-                    <Link to={detail.src}>{detail.name}</Link>
-                  </NavItemText>
-                ))}
-              </Tooltip>
-            )}
+            <Tooltip>
+              {item.details.map((detail, index) => (
+                <NavItemText key={`${detail.src}_${index}`}>
+                  <Link to={detail.src}>{detail.name}</Link>
+                </NavItemText>
+              ))}
+            </Tooltip>
           </NavItem>
         ))}
         <WalletButton>지갑 연동</WalletButton>

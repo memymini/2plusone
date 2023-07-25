@@ -25,7 +25,7 @@ export const navItems = [
   },
   {
     text: "거래내역",
-    details: [],
+    details: [{ name: "거래내역", src: "transaction" }],
   },
   {
     text: "고객센터",

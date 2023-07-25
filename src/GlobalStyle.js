@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
 
   /* 스크롤바 막대 꾸미기 */
   body::-webkit-scrollbar-thumb {
-    background-color: #cbd5e1;
+    background-color: #e5e7eb;
     border-radius: 10px;
   }
 

@@ -1,9 +1,10 @@
-import { HeartImg, Root } from "./styled";
+import { IntroSection } from "./components";
+import { Root } from "./styled";
 
 export const Home = () => {
   return (
     <Root>
-      <HeartImg />
+      <IntroSection />
     </Root>
   );
 };
