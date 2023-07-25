@@ -1,14 +1,14 @@
 import { Outlet } from "react-router-dom";
 import { Nav } from "../../components/Nav";
-import { Container, Root } from "./styled";
+import { Root } from "./styled";
+import { Footer } from "../../components/Footer/Footer";
 
 export const Layout = () => {
   return (
     <Root>
       <Nav />
-      <Container>
-        <Outlet />
-      </Container>
+      <Outlet />
+      <Footer />
     </Root>
   );
 };

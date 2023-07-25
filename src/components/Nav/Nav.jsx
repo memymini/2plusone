@@ -17,8 +17,8 @@ export const Nav = () => {
     <Root>
       <Container>
         <LogoImg />
-        {navItems.map((item) => (
-          <NavItem key={item.link}>
+        {navItems.map((item, index) => (
+          <NavItem key={index}>
             {item.text}
             <Tooltip>
               {item.details.map((detail, index) => (

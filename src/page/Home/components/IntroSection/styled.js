@@ -15,6 +15,7 @@ const commonFontSize = css`
 export const IntroRoot = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 1280px;
   height: fit-content;
   margin-top: 10px;
 `;
