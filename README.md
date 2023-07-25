@@ -8,9 +8,8 @@
 - docs : 문서 수정에 대한 커밋
 - style : 코드 스타일 혹은 포맷 등에 관한 커밋
 - refactor :  코드 리팩토링에 대한 커밋   
-  ![image](https://github.com/Tapirus03/2plusone/assets/87259219/a09d10db-2b9b-4ca5-9805-8b64e2eb021b)
 
-
-## 모듈
-- <b>Style</b> : styled-components   
+## 참고
+- css : styled-components   
   ```npm i styled-components```
+- 컨테이너 max-width : 1280px
