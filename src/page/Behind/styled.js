@@ -16,15 +16,17 @@ const BackContainer = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 34px;
+  font-size: 54px;
   color: #333333;
   margin-bottom: 10px;
+  margin-top: 10px;
 `;
 
 
 const Description = styled.p`
-  font-size: 16px;
+  font-size: 20px;
   color: #666666;
+  margin-top: 10px;
 `;
 
 export const Back = () => {
@@ -42,7 +44,7 @@ export const Back = () => {
 
 const WhiteGround = styled.div`
   width: 1280px;
-  height: 1000px;
+  height: 900px;
   flex-shrink: 0;
   background: #FFFFFF;
   margin-top: 5px;
@@ -56,18 +58,22 @@ const ImageGroup = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px; 
+  margin-bottom: 5px; 
 `;
 
 const WhiteGroundImage = styled.img`
-  width: 320px;
-  height: 320px; 
+  width: 300px;
+  height: 300px; 
   object-fit: cover;
   border-radius: 13%;
-  margin: 45px;
+  margin: 50px;
   border: 3px solid #000000; 
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;
 
 const ButtonContainer = styled.div`
