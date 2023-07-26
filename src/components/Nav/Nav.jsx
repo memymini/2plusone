@@ -16,7 +16,9 @@ export const Nav = () => {
   return (
     <Root>
       <Container>
-        <LogoImg />
+        <Link to="/">
+          <LogoImg />
+        </Link>
         {navItems.map((item, index) => (
           <NavItem key={index}>
             {item.text}

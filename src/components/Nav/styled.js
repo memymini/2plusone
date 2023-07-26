@@ -35,7 +35,7 @@ export const LogoImg = styled.img.attrs({
 })`
   width: 166px;
   height: 83px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   cursor: pointer;
 `;
 
