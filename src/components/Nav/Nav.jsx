@@ -10,7 +10,7 @@ import {
   Root,
   WalletButton,
 } from "./styled";
-import { navItems } from "../../utils/NavUtils";
+import navItems from "../../utils/NavUtils";
 
 export const Nav = () => {
   return (

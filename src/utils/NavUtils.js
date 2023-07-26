@@ -1,4 +1,4 @@
-export const navItems = [
+const navItems = [
   {
     text: "기부런 소개",
     details: [
@@ -35,3 +35,5 @@ export const navItems = [
     ],
   },
 ];
+
+export default navItems;
