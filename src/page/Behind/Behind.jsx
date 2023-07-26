@@ -1,4 +1,5 @@
-import { Root, Back, BottomBack } from "./styled";
+import { Back, BottomBack } from "./components";
+import { Root } from "./styled";
 
 export const Behind = () => {
   return (
