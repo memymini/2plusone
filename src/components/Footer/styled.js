@@ -126,6 +126,7 @@ export const MailInput = styled.input`
   border: 2px solid #f1f1f1;
   background: #fff;
   padding-left: 22px;
+  padding-right: 165px;
 `;
 
 export const Button = styled.button`
