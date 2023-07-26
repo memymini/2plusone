@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const BackContainer = styled.div`
-  width: 1280px;
+  width: 100%;
   height: 1664px;
   flex-shrink: 0;
-  background: #FFF7ED;
+  background: #fff7ed;
   margin-top: 0px;
   padding-top: 120px;
   display: flex;
@@ -48,7 +48,7 @@ export const Typo = styled.div`
 `;
 export const MedalImage = styled.img`
   width: 128px;
-  height: 183px; 
+  height: 183px;
   object-fit: cover;
   margin-left: 50px;
   margin-right: 50px;
@@ -63,7 +63,5 @@ export const ImageText = styled.div`
 /*Ranking List*/
 
 export const List = () => {
-    return (
-        <h1>helloworld</h1>
-    );
+  return <h1>helloworld</h1>;
 };
