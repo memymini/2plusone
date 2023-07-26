@@ -11,6 +11,7 @@ export const Root = styled.nav`
   font-size: 30px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  z-index: 999;
 `;
 
 export const Container = styled.div`

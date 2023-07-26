@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import heartImg from "../../../../assets/image/main_heart.png";
 
-const commonMargin = css`
+const customMargin = css`
   margin: ${(props) =>
     `${props.top || "0px"} ${props.right || "0px"} ${props.bottom || "0px"} ${
       props.left || "0px"
@@ -25,7 +25,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  ${commonMargin}// Reuse the common margin
+  ${customMargin}// Reuse the common margin
 `;
 
 export const HeartImg = styled.img.attrs({
@@ -40,7 +40,7 @@ export const HeartImg = styled.img.attrs({
 export const TypoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  ${commonMargin}// Reuse the common margin
+  ${customMargin}// Reuse the common margin
 `;
 
 export const Typo = styled.div`
@@ -51,7 +51,7 @@ export const Typo = styled.div`
   font-weight: ${(props) => props.weight || 700};
   line-height: normal;
   ${commonFontSize} // Reuse the common font size
-  ${commonMargin}
+  ${customMargin}
 `;
 
 export const OrangeTypo = styled.span`
@@ -72,7 +72,7 @@ export const Button = styled.button`
   font-size: 20px;
   font-weight: 400;
   cursor: pointer;
-  ${commonMargin}; // Reuse the common margin
+  ${customMargin}; // Reuse the common margin
   transition: 0.3s;
   &:hover {
     background: #ea580c;

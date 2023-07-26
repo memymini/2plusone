@@ -6,7 +6,6 @@ import {
   NavItem,
   Tooltip,
   NavItemText,
-  NavList,
   Root,
   WalletButton,
 } from "./styled";

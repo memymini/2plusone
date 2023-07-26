@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const Root = styled.div``;
 
 export const BackContainer = styled.div`
-  width: 1280px;
+  width: 100%;
   height: 181px;
   flex-shrink: 0;
-  background: #F0F0F0;
+  background: #f0f0f0;
   margin-top: 5px;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,6 @@ export const Title = styled.h2`
   margin-top: 10px;
 `;
 
-
 export const Description = styled.p`
   font-size: 20px;
   color: #666666;
@@ -34,7 +33,7 @@ export const WhiteGround = styled.div`
   width: 1280px;
   height: 900px;
   flex-shrink: 0;
-  background: #FFFFFF;
+  background: #ffffff;
   margin-top: 5px;
   display: flex;
   flex-direction: column;
@@ -46,16 +45,16 @@ export const ImageGroup = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 `;
 
 export const WhiteGroundImage = styled.img`
   width: 300px;
-  height: 300px; 
+  height: 300px;
   object-fit: cover;
   border-radius: 13%;
   margin: 50px;
-  border: 3px solid #000000; 
+  border: 3px solid #000000;
   position: relative;
   cursor: pointer;
 
@@ -71,8 +70,8 @@ export const ButtonContainer = styled.div`
 
 export const Button = styled.button`
   font-size: 20px;
-  background-color: ${({ isActive }) => (isActive ? '#000000' : '#FFFFFF')};
-  color: ${({ isActive }) => (isActive ? '#FFFFFF' : '#000000')};
+  background-color: ${({ isActive }) => (isActive ? "#000000" : "#FFFFFF")};
+  color: ${({ isActive }) => (isActive ? "#FFFFFF" : "#000000")};
   border: 2px solid #000000;
   border-radius: 10px;
   padding: 10px 20px;
@@ -82,6 +81,6 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #000000;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 `;
