@@ -2,19 +2,11 @@ import styled from "styled-components";
 
 export const BackContainer = styled.div`
   width: 100%;
-<<<<<<< HEAD
   height: 1530px;
   flex-shrink: 0;
   background: #FFFFFF;
   margin-top: 5px;
   padding-top: 40px;
-=======
-  height: 1664px;
-  flex-shrink: 0;
-  background: #fff7ed;
-  margin-top: 0px;
-  padding-top: 120px;
->>>>>>> 48e1df8381031017eb17b43e39134480bd99826a
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -70,7 +62,6 @@ export const ImageText = styled.div`
 
 /*Ranking List*/
 
-<<<<<<< HEAD
 export const Line = styled.div`
   width: 1100px;
   height: 0.7px;
@@ -141,8 +132,3 @@ export const Button = styled.button`
     color: #FFFFFF;
   }
 `;
-=======
-export const List = () => {
-  return <h1>helloworld</h1>;
-};
->>>>>>> 48e1df8381031017eb17b43e39134480bd99826a
