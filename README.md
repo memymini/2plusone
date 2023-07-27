@@ -15,4 +15,3 @@
 - 컨테이너 max-width : 1280px
 - ethers 지갑 이용
  ```npm i ethers```
- git연습중.

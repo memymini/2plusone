@@ -1,4 +1,7 @@
 import React from "react";
+import { useState, useCallback } from "react";
+import {Component1} from "../wallet/index";
+import PortalPopup from "../wallet/PortalPopup";
 import { Link } from "react-router-dom";
 import {
   Container,
@@ -12,7 +15,18 @@ import {
 import navItems from "../../utils/NavUtils";
 
 export const Nav = () => {
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = useCallback(() => {
+    setPopupOpen(true);
+  }, []);
+
+  const closePopup = useCallback(() => {
+    setPopupOpen(false);
+  }, []);
+
   return (
+    <>
     <Root>
       <Container>
         <Link to="/">
@@ -30,8 +44,20 @@ export const Nav = () => {
             </Tooltip>
           </NavItem>
         ))}
-        <WalletButton>지갑 연동</WalletButton>
+        <WalletButton onClick = {openPopup}>
+          지갑 연동
+        </WalletButton>
       </Container>
     </Root>
+    {isPopupOpen && (
+      <PortalPopup
+        overlayColor="rgba(113, 113, 113, 0.3)"
+        placement="Centered"
+        onOutsideClick={closePopup}
+      >
+        <Component1 onClose={closePopup} />
+      </PortalPopup>
+    )}
+  </>
   );
 };
