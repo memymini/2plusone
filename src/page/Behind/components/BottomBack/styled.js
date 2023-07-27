@@ -1,36 +1,7 @@
 import styled from "styled-components";
 
-export const Root = styled.div``;
-
-export const BackContainer = styled.div`
-  width: 100%;
-  height: 181px;
-  flex-shrink: 0;
-  background: #f0f0f0;
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Title = styled.h2`
-  font-size: 54px;
-  color: #333333;
-  margin-bottom: 10px;
-  margin-top: 10px;
-`;
-
-export const Description = styled.p`
-  font-size: 20px;
-  color: #666666;
-  margin-top: 10px;
-`;
-
-/*밑에부터는 그림 페이지*/
-
 export const WhiteGround = styled.div`
-  width: 1280px;
+  width: 100%;
   height: 900px;
   flex-shrink: 0;
   background: #ffffff;
@@ -45,7 +16,12 @@ export const ImageGroup = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  width: 1280px;
   margin-bottom: 5px;
+  > * {
+    flex-basis: 33.33%;
+  }
 `;
 
 export const WhiteGroundImage = styled.img`
