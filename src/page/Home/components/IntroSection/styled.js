@@ -8,14 +8,14 @@ const customMargin = css`
     }`};
 `;
 
-const commonFontSize = css`
+const customFontSize = css`
   font-size: ${(props) => props.size || "50px"};
 `;
 
 export const IntroRoot = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
+  width: 1280px;
   height: fit-content;
   margin-top: 10px;
 `;
@@ -25,7 +25,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  ${customMargin}// Reuse the common margin
+  ${customMargin}
 `;
 
 export const HeartImg = styled.img.attrs({
@@ -40,7 +40,7 @@ export const HeartImg = styled.img.attrs({
 export const TypoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  ${customMargin}// Reuse the common margin
+  ${customMargin}
 `;
 
 export const Typo = styled.div`
@@ -50,13 +50,13 @@ export const Typo = styled.div`
   font-family: Noto Sans KR;
   font-weight: ${(props) => props.weight || 700};
   line-height: normal;
-  ${commonFontSize} // Reuse the common font size
+  ${customFontSize} // Reuse the common font size
   ${customMargin}
 `;
 
 export const OrangeTypo = styled.span`
   color: #ff7425;
-  ${commonFontSize}// Reuse the common font size
+  ${customFontSize}// Reuse the common font size
 `;
 
 export const Button = styled.button`
@@ -72,7 +72,7 @@ export const Button = styled.button`
   font-size: 20px;
   font-weight: 400;
   cursor: pointer;
-  ${customMargin}; // Reuse the common margin
+  ${customMargin};
   transition: 0.3s;
   &:hover {
     background: #ea580c;
