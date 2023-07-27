@@ -1,36 +1,20 @@
-import { IntroSection } from "./components";
-import { TypoContainer } from "./components/IntroSection/styled";
-import { Root } from "./styled";
+import { IntroSection, NFTSection, SubTitle } from "./components";
+import { OrangeTitle, Root, Title } from "./styled";
+import handIcon from "../../assets/icon/fi-rr-hand-holding-heart.png";
+import personHeartIcon from "../../assets/icon/fi-rr-following.png";
+import voteIcon from "../../assets/icon/fi-rr-interactive.png";
 
 export const Home = () => {
   return (
     <Root>
       <IntroSection />
-      {/*       <NFTSectionRoot>
-        <PhoneImg />
-        <TypoContainer>
-          <Title>기부런의 NFT를 발급받으세요!</Title>
-          <Typo>새로운 인증의 시대, 기부런 NFT와 시작할 수 있습니다.</Typo>
-          <NFTContainer>
-            <NFTItem>
-              <TotalItemBox />
-              <NFTImg />
-              <TypoContainer>
-                <Typo>Amazing Collection</Typo>
-                <Typo>by Arkhan</Typo>
-              </TypoContainer>
-            </NFTItem>
-            <NFTItem>
-              <TotalItemBox />
-              <NFTImg />
-              <TypoContainer>
-                <Typo>Amazing Collection</Typo>
-                <Typo>by Arkhan</Typo>
-              </TypoContainer>
-            </NFTItem>
-          </NFTContainer>
-        </TypoContainer>
-      </NFTSectionRoot> */}
+      <NFTSection />
+      <Title>
+        당신의&nbsp;<OrangeTitle>사랑</OrangeTitle>을 나눠주세요
+      </Title>
+      <SubTitle src={handIcon}>모금 중</SubTitle>
+      <SubTitle src={voteIcon}>투표 중</SubTitle>
+      <SubTitle src={personHeartIcon}>비하인드</SubTitle>
     </Root>
   );
 };
