@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { BehindDetailcontents } from "./components";
+import { BehindDetailcontents} from "./components";
 import {Back} from "../Behind/components";
 
 export const BehindDetail = () => {
@@ -9,7 +9,8 @@ export const BehindDetail = () => {
   return (
     <div>
       <Back/>
-      <BehindDetailcontents id={id}/>
+      <BehindDetailcontents id={id}>
+      </BehindDetailcontents>
     </div>
   );
 };

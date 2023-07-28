@@ -69,7 +69,7 @@ export const Div1 = styled.div`
   left: 0px;
   border-radius: 54px;
   background-color: #ffdcc1;
-  box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.24);
+  box-shadow: 20px 20px 1px rgba(0, 0, 0, 0.2);
   width: 957px;
   height: 523px;
   overflow: hidden;
