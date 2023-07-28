@@ -97,8 +97,8 @@ export const X = styled.button`
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 17px;
-  left: 908px;
+  top: 5px;
+  left: 906px;
   font-size: 36px;
   font-weight: 500;
   font-family: var(--font-source-sans-pro);

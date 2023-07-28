@@ -38,6 +38,7 @@ export const Component1 = ({ onClose }) => {
             src="/digital-walletremovebgpreview-1@2x.png"
           />
         </Div1>
+        <X onClick={onClose}>x</X>
         <Background />
         <KeplrParent>
           <Keplr2 />
@@ -45,7 +46,6 @@ export const Component1 = ({ onClose }) => {
           <Metamask />
           <Phantom1 />
         </KeplrParent>
-        <X onClick={onClose}>X</X>
       </Parent1>
     </DivRoot>
   );
