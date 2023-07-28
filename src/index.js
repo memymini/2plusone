@@ -8,6 +8,8 @@ import { Behind } from "./page/Behind";
 import { Rank } from "./page/Rank";
 import { BehindDetail } from "./page/BehindDetail";
 import { Waiting } from "./page/Waiting";
+import { WaitingDetail } from "./page/WaitingDetail";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +23,7 @@ root.render(
           <Route path="/behind/:id" element={<BehindDetail />}></Route>
           <Route path="/rank" element={<Rank />}></Route>
           <Route path="/waiting" element={<Waiting />}></Route>
+          <Route path="/waiting/:id" element={<WaitingDetail />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
