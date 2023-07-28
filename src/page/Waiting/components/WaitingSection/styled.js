@@ -94,14 +94,14 @@ export const Contents = styled.div`
   width: 400px;
   height: 400px;
   flex-shrink: 0;
-  border-radius: 24px;
+
 `;
 
 export const Image = styled.img`
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 24px;
-`;
+         width: 400px;
+         height: 400px;
+         border-radius: 24px;
+       `;
 
 export const Shadow = styled.button`
   display: flex;

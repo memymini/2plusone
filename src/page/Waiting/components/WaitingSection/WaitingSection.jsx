@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link , useParams} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { contents } from "../../../../utils/WaitingDetail";
 import {
   TopBox,
   Typo,
@@ -19,7 +20,6 @@ import {
 } from "./styled";
 
 export const WaitingSection = () => {
-  const { index } = useParams();
   //카테고리 선택 버튼
   const [selectedButton, setSelectedButton] = useState("all");
 
@@ -28,69 +28,7 @@ export const WaitingSection = () => {
     console.log("Selected Category:", category);
   };
   //contents 내용
-  const [contents, setContents] = useState([
-    {
-      title: "폭우로 인해 집과 가족을 잃은 이들",
-      organization: "서울시사회복지센터",
-      image: "Waiting1.png",
-      progress: 83,
-      barWidth: "290px",
-      totalTokens: "10,209,000",
-      targetTokens: "12,300,000",
-      categories: ["all", "disaster"],
-    },
-    {
-      title: "이 아이가 배부름을 알까요",
-      organization: "세이브더 칠드런",
-      image: "Waiting2.png",
-      progress: 52,
-      barWidth: "182px",
-      totalTokens: "6,396,000",
-      targetTokens: "12,300,000",
-      categories: ["all", "weak"],
-    },
-    {
-      title: "홍수로 집을 잃은 사람들",
-      organization: "강서구청",
-      image: "Waiting3.png",
-      progress: 89,
-      barWidth: "311px",
-      totalTokens: "10,947,000",
-      targetTokens: "12,300,000",
-      categories: ["all", "disaster"],
-    },
-    {
-      title: "5살 지영이를 도와주세요",
-      organization: "굿네이버스",
-      image: "Waiting4.png",
-      progress: 42,
-      barWidth: "147px",
-      totalTokens: "5,166,000",
-      targetTokens: "12,300,000",
-      categories: ["all", "weak"],
-    },
-    {
-      title: "강원 산불 피해 모금",
-      organization: "한국재난관리협회",
-      image: "Waiting5.png",
-      progress: 35,
-      barWidth: "122px",
-      totalTokens: "4,350,000",
-      targetTokens: "12,300,000",
-      categories: ["all", "disaster", "environment"],
-    },
-    {
-      title: "소아암 환자들을 위한 의료비 지원",
-      organization: "사랑의열매",
-      image: "Waiting6.png",
-      progress: 21,
-      barWidth: "73px",
-      totalTokens: "2,583,000",
-      targetTokens: "12,300,000",
-      categories: ["all", "weak", "medical"],
-    },
-    // 다른 컨텐츠들도 추가...
-  ]);
+
 
   return (
     <div>
@@ -136,7 +74,7 @@ export const WaitingSection = () => {
                 selectedButton === "all"
             )
             .map((content, index) => (
-              <Link to={`/WaitingDetail/${index}`} key={index}>
+              <Link to={`/waiting/${index}`} key={index}>
                 <Contents key={index}>
                   <Image src={content.image} />
                   <Shadow align="column">
