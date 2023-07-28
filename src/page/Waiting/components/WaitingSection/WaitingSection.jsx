@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React, { useState } from "react";
 import {
   TopBox,
   Typo,
@@ -17,25 +17,78 @@ import {
   BottomBox,
 } from "./styled";
 
-export const WaitingSection = () => {
-
-const ButtonComponent = () => {
-  const [selectedButton, setSelectedButton] = useState('All');
+export const WaitingSection = () => {  
+  
+  const [selectedButton, setSelectedButton] = useState("all");
 
   const handleButtonClick = (category) => {
     setSelectedButton(category);
+    console.log("Selected Category:", category);
   };
-  return (
-    <div>
-      <button onClick={() => handleButtonClick("All")}>
-        
-      </button>
-      <button onClick={() => handleButtonClick("두 번째 버튼")}>
-        두 번째 버튼
-      </button>
-    </div>
-  );
-};
+  const [contents, setContents] = useState([
+    {
+      title: "폭우로 인해 집과 가족을 잃은 이들",
+      organization: "서울시사회복지센터",
+      image: "Waiting1.png",
+      progress: 83,
+      barWidth: "290px",
+      totalTokens: "10,209,000",
+      targetTokens: "12,300,000",
+      categories: ["all", "disaster"]
+    },
+    {
+      title: "이 아이가 배부름을 알까요",
+      organization: "세이브더 칠드런",
+      image: "Waiting2.png",
+      progress: 52,
+      barWidth: "182px",
+      totalTokens: "6,396,000",
+      targetTokens: "12,300,000",
+      categories: ["all", "weak"]
+    },
+    {
+      title: "홍수로 집을 잃은 사람들",
+      organization: "강서구청",
+      image: "Waiting3.png",
+      progress: 89,
+      barWidth: "311px",
+      totalTokens: "10,947,000",
+      targetTokens: "12,300,000",
+      categories: ["all", "disaster"]
+    },
+    {
+      title: "5살 지영이를 도와주세요",
+      organization: "굿네이버스",
+      image: "Waiting4.png",
+      progress: 42,
+      barWidth: "147px",
+      totalTokens: "5,166,000",
+      targetTokens: "12,300,000",
+      categories: ["all", "weak"]
+    },
+    {
+      title: "강원 산불 피해 모금",
+      organization: "한국재난관리협회",
+      image: "Waiting5.png",
+      progress: 35,
+      barWidth: "122px",
+      totalTokens: "4,350,000",
+      targetTokens: "12,300,000",
+      categories: ["all", "disaster", "environment"]
+    },
+    {
+      title: "소아암 환자들을 위한 의료비 지원",
+      organization: "사랑의열매",
+      image: "Waiting6.png",
+      progress: 21,
+      barWidth: "73px",
+      totalTokens: "2,583,000",
+      targetTokens: "12,300,000",
+      categories: ["all", "weak", "medical"]
+    },
+    // 다른 컨텐츠들도 추가...
+  ]);
+
   return (
     <div>
       <TopBox>
@@ -45,155 +98,64 @@ const ButtonComponent = () => {
 
       <TypoContainer>
         <Typo size="48px">
-          다음 기부 목록에 <TypoOrange size="48px">투표</TypoOrange>하세요
+          다음 기부 목록에 <TypoOrange size="48px">투표</TypoOrange>
+          하세요
         </Typo>
       </TypoContainer>
 
       <CategoryBox>
-        <CategoryButton>
-          <Typo size="14px" handleButtonClick>All</Typo>
+        <CategoryButton onClick={() => handleButtonClick("all")}>
+          <Typo size="14px">All</Typo>
         </CategoryButton>
-        <CategoryButton>
+        <CategoryButton onClick={() => handleButtonClick("animal")}>
           <Typo size="14px">동물</Typo>
         </CategoryButton>
-        <CategoryButton>
+        <CategoryButton onClick={() => handleButtonClick("disaster")}>
           <Typo size="14px">재난</Typo>
         </CategoryButton>
-        <CategoryButton>
+        <CategoryButton onClick={() => handleButtonClick("weak")}>
           <Typo size="14px">사회적 약자</Typo>
         </CategoryButton>
-        <CategoryButton>
-          <Typo size="14px">다문화</Typo>
+        <CategoryButton onClick={() => handleButtonClick("environment")}>
+          <Typo size="14px">환경</Typo>
+        </CategoryButton>
+        <CategoryButton onClick={() => handleButtonClick("medical")}>
+          <Typo size="14px">의료</Typo>
         </CategoryButton>
       </CategoryBox>
 
       <div>
         <ContentsBox>
-          <Contents>
-            <Image src="Waiting1.png" />
-            <Shadow align="column">
-              <TypoWhite size="24px">
-                폭우로 인해 집과 가족을 잃은 이들
-              </TypoWhite>
-              <TypoWhite size="16px">서울시사회복지센터</TypoWhite>
-              <DonateButton>
-                <TypoWhite size="14px">투표하기</TypoWhite>
-              </DonateButton>
-              <TypoWhite size="14px" top="150px">
-                달성률 83%
-              </TypoWhite>
-              <FullBar>
-                <Bar width="290px" />
-              </FullBar>
-              <TypoWhite size="14px" top="15px">
-                누적 토큰수 10,209,000/12,300,000개
-              </TypoWhite>
-            </Shadow>
-          </Contents>
-          <Contents>
-            <Image src="Waiting2.png" />
-            <Shadow align="column">
-              <TypoWhite size="24px">이 아이가 배부름을 알까요</TypoWhite>
-              <TypoWhite size="16px">세이브더칠드런</TypoWhite>
-              <DonateButton>
-                <TypoWhite size="14px">투표하기</TypoWhite>
-              </DonateButton>
-              <TypoWhite size="14px" top="150px">
-                달성률 52%
-              </TypoWhite>
-              <FullBar>
-                <Bar width="182px" />
-              </FullBar>
-              <TypoWhite size="14px" top="15px">
-                누적 토큰수 6,396,000/12,300,000개
-              </TypoWhite>
-            </Shadow>
-          </Contents>
-          <Contents>
-            <Image src="Waiting3.png" />
-            <Shadow align="column">
-              <TypoWhite size="24px">홍수로 집을 잃은 사람들</TypoWhite>
-              <TypoWhite size="16px">강서구청</TypoWhite>
-              <DonateButton>
-                <TypoWhite size="14px">투표하기</TypoWhite>
-              </DonateButton>
-              <TypoWhite size="14px" top="150px">
-                달성률 89%
-              </TypoWhite>
-              <FullBar>
-                <Bar width="311px" />
-              </FullBar>
-              <TypoWhite size="14px" top="15px">
-                누적 토큰수 10,947,000/12,300,000개
-              </TypoWhite>
-            </Shadow>
-          </Contents>
-        </ContentsBox>
-        <ContentsBox>
-          <Contents>
-            <Image src="Waiting4.png" />
-            <Shadow align="column">
-              <TypoWhite size="24px">
-                지영이가 다시 뛰어놀 수 있도록 도와주세요
-              </TypoWhite>
-              <TypoWhite size="16px">굿네이버스</TypoWhite>
-              <DonateButton>
-                <TypoWhite size="14px">투표하기</TypoWhite>
-              </DonateButton>
-              <TypoWhite size="14px" top="115px">
-                달성률 42%
-              </TypoWhite>
-              <FullBar>
-                <Bar width="147px" />
-              </FullBar>
-              <TypoWhite size="14px" top="15px">
-                누적 토큰수 5,166,000/12,300,000개
-              </TypoWhite>
-            </Shadow>
-          </Contents>
-          <Contents>
-            <Image src="Waiting5.png" />
-            <Shadow align="column">
-              <TypoWhite size="24px">강원 산불 피해 모금</TypoWhite>
-              <TypoWhite size="16px">한국재난관리협회</TypoWhite>
-              <DonateButton>
-                <TypoWhite size="14px">투표하기</TypoWhite>
-              </DonateButton>
-              <TypoWhite size="14px" top="150px">
-                달성률 35%
-              </TypoWhite>
-              <FullBar>
-                <Bar width="122px" />
-              </FullBar>
-              <TypoWhite size="14px" top="15px">
-                누적 토큰수 4,305,000/12,300,000개
-              </TypoWhite>
-            </Shadow>
-          </Contents>
-          <Contents>
-            <Image src="Waiting6.png" />
-            <Shadow align="column">
-              <TypoWhite size="24px">
-                소아암 환자들을 위한 의료비 지원
-              </TypoWhite>
-              <TypoWhite size="16px">사랑의열매</TypoWhite>
-              <DonateButton>
-                <TypoWhite size="14px">투표하기</TypoWhite>
-              </DonateButton>
-              <TypoWhite size="14px" top="150px">
-                달성률 21%
-              </TypoWhite>
-              <FullBar>
-                <Bar width="73px" />
-              </FullBar>
-              <TypoWhite size="14px" top="15px">
-                누적 토큰수 2,583,000/12,300,000개
-              </TypoWhite>
-            </Shadow>
-          </Contents>
+          {contents
+            .filter(
+              (content) =>
+                content.categories.includes(selectedButton) ||
+                selectedButton === "all"
+            )
+            .map((content, index) => (
+              <Contents key={index}>
+                <Image src={content.image} />
+                <Shadow align="column">
+                  <TypoWhite size="24px">{content.title}</TypoWhite>
+                  <TypoWhite size="16px">{content.organization}</TypoWhite>
+                  <DonateButton>
+                    <TypoWhite size="14px">투표하기</TypoWhite>
+                  </DonateButton>
+                  <TypoWhite size="14px" top="150px">
+                    달성률 {content.progress}%
+                  </TypoWhite>
+                  <FullBar>
+                    <Bar width={content.barWidth} />
+                  </FullBar>
+                  <TypoWhite size="14px" top="15px">
+                    누적 토큰수 {content.totalTokens}/{content.targetTokens}개
+                  </TypoWhite>
+                </Shadow>
+              </Contents>
+            ))}
         </ContentsBox>
       </div>
-      <BottomBox/>
+      <BottomBox />
     </div>
   );
 };

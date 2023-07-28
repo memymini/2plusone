@@ -76,18 +76,18 @@ export const CategoryButton = styled.button`
 `;
 
 export const ContentsBox = styled.div`
-  display: flex;
-  width: 100vw;
-  height: 500px;
-  flex-shrink: 0;
-  padding-top: 70px;
-  padding-bottom: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
-  justify-content: center;
-  flexdiraction: row;
-  gap: 50px;
-`;
+         display: flex;
+         width: 100vw;
+         min-height: 500px;
+         flex-shrink: 0;
+         padding-top: 70px;
+         padding-bottom: 100px;
+         padding-left: 100px;
+         padding-right: 100px;
+         justify-content: center;
+         flex-direction: row;
+         gap: 50px;
+       `;
 
 export const Contents = styled.div`
   display: flex;
