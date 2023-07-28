@@ -15,7 +15,7 @@
 - 컨테이너 max-width : 1280px
 - ethers 지갑 이용
  ```npm i ethers```
--거래내역 페이지 그래프 구현 명령어
+- 거래내역 페이지 그래프 구현 명령어
 ```npm install --save react-chartjs-2 chart.js```
 ```npm install recharts```
 
