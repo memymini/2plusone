@@ -28,7 +28,7 @@ export const Phantom11 = styled.b`
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 157px;
+  top: 148px;
   width: 252px;
 `;
 export const PhantomRoot = styled.button`

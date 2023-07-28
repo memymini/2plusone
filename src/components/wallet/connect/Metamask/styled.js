@@ -19,7 +19,6 @@ export const Metamask1 = styled.b`
   font-size: var(--font-size-11xl);
   display: inline-block;
   color: var(--color-black);
-  text-align: center;
   width: 252.23px;
   height: 51.46px;
   flex-shrink: 0;
@@ -30,8 +29,8 @@ export const Metamask1 = styled.b`
   font-weight: 700;
   letter-spacing: 0;
   line-height: normal;
-  position: relative;
-  text-align: center;
+  border-radius: 54px;
+  top 300px
 `;
 export const RemovebgPreview1Icon = styled.img`
   position: absolute;
