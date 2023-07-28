@@ -17,7 +17,7 @@ export const Metamask = () => {
     try {
       if (window.ethereum) {
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
-        const defaultAccount = accounts[0];
+        const defaultAccount = accounts[0]; // 이거 있어야 잔고가 바로 안나오고 기다렸다가 나옴.
 
         // 연결 성공 시 팝업 표시
         setPopup1Open(true);

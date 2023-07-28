@@ -31,10 +31,7 @@ export const Keplr1 = styled.b`
   width: 252px;
 `;
 export const KelprRemovebgPreview1Icon = styled.img`
-  position: absolute;
   height: 70.6%;
-  width: 64.23%;
-  top: 0%;
   right: 20.31%;
   bottom: 29.4%;
   left: 15.46%;
@@ -42,6 +39,11 @@ export const KelprRemovebgPreview1Icon = styled.img`
   overflow: hidden;
   max-height: 100%;
   object-fit: cover;
+  height: 142px;
+  object-fit: cover;
+  position: absolute;
+  top: 1.5%;
+  width: 155px;
   
 `;
 export const KeplrRoot = styled.button`

@@ -6,22 +6,21 @@ export const Overlay = styled.div`
   background-color: rgba(255, 146, 16, 0.46);
   transform: rotate(-0.03deg);
   transform-origin: 0 0;
-  top: 0;
   background-color: #ff910f75;
   border-radius: 54px;
   height: 523px;
-  left: 30px;
+  left: 0px;
   position: fixed;
   top: 0;
   transform: rotate(-0.03deg);
-  width: 550px;
+  width: 500px;
   
 `;
 export const OverlayWrapper = styled.div`
   position: absolute;
   top: 0.31px;
-  left: calc(50% - 550.57px);
-  width: 554.73px;
+  left: 30;
+  width: 1000.73px;
   height: 586.17px;
   transform: rotate(-0.03deg);
   transform-origin: 0 0;
@@ -58,7 +57,7 @@ export const Div2 = styled.div`
 `;
 export const DigitalWalletRemovebgPrevieIcon = styled.img`
   position: absolute;
-  top: 97px;
+  top: 110px;
   left: 0px;
   width: 500px;
   height: 436px;
@@ -68,12 +67,13 @@ export const Div1 = styled.div`
   position: absolute;
   top: 0px;
   left: 0px;
-  border-radius: var(--br-35xl);
+  border-radius: 54px;
   background-color: #ffdcc1;
   box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.24);
   width: 957px;
   height: 523px;
   overflow: hidden;
+  transform: rotate(-0.03deg);
 `;
 export const Background = styled.div`
   position: absolute;
