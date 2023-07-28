@@ -5,7 +5,7 @@ export const WhiteGround = styled.div`
   height: 900px;
   flex-shrink: 0;
   background: #ffffff;
-  margin-top: 5px;
+  margin-top: 65px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,6 +42,7 @@ export const WhiteGroundImage = styled.img`
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 `;
 
 export const Button = styled.button`

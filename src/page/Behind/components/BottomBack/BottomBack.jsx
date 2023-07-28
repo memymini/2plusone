@@ -15,16 +15,26 @@ export const BottomBack = () => {
   const handleButtonClick = (group) => {
     setCurrentGroup(group);
   };
+
+  const handleImageClick = (groupId) => {
+    if (currentGroup !== groupId) {
+      setCurrentGroup(groupId);
+    }
+  };
+
+
   return (
     <WhiteGround>
       {ImageData.map(
         (data) =>
           data.group === currentGroup && (
-            <ImageGroup>
+            <ImageGroup key={data.group}>
               {data.details.map((item, index) => (
-                <Link to={item.id}>
-                  <WhiteGroundImage src={item.src} />
-                </Link>
+                <div key={item.id} onClick={() => handleImageClick(data.group)}>
+                  <Link to={item.id}>
+                    <WhiteGroundImage src={item.src} />
+                  </Link>
+                </div>
               ))}
             </ImageGroup>
           )

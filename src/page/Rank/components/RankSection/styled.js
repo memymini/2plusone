@@ -92,6 +92,7 @@ export const PersonImage = styled.img`
   height: 120px; 
   border-radius: 90%;
   object-fit: cover;
+  cursor: pointer;
   margin: ${(props) =>
     `${
       props.left || "0px"
@@ -105,6 +106,7 @@ export const NameContainer = styled.div`
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   cursor: pointer;
    margin: ${(props) =>
     `${props.left || "0px"}`};
 
