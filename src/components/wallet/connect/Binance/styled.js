@@ -37,7 +37,7 @@ export const RemovebgPreview1Icon = styled.img`
   position: absolute;
   height: 70.07%;
   width: 61.45%;
-  top: 0%;
+  top: 1.5%;
   right: 22.68%;
   bottom: 29.93%;
   left: 15.86%;

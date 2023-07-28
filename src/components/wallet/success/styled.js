@@ -33,7 +33,7 @@ export const Div2 = styled.div`
   font-size: 25px;
   font-weight: 600;
   height: 59px;
-  left: 120px;
+  left: 130px;
   letter-spacing: 0.1px;
   line-height: normal;
   position:absolute;
