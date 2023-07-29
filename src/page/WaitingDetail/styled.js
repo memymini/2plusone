@@ -114,6 +114,7 @@ export const ButtonContainer = styled.div`
   display: flex;
   width: 800px;
   flex-direction: row;
+  justify-content: center; /* 수평 가운데 정렬 */
   align-items: center;
   gap:90px;
   margin-bottom: 32px;
