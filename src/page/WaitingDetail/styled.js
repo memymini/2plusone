@@ -38,7 +38,7 @@ export const Typo = styled.div`
   font-size: ${(props) => props.size || "15px"};
   font-style: normal;
   ${fontWeight}
-  line-height: 129.73%;
+  line-height: 129.73%;;
   letter-spacing: -0.8px;
   margin-left: 90px;
   ${customMargin}

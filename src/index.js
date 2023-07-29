@@ -7,6 +7,8 @@ import { Home } from "./page/Home";
 import { Behind } from "./page/Behind";
 import { Rank } from "./page/Rank";
 import { BehindDetail } from "./page/BehindDetail";
+import { Progress } from "./page/Progress";
+import { ProgressDetail } from "./page/ProgressDetail";
 import { Waiting } from "./page/Waiting";
 import { WaitingDetail } from "./page/WaitingDetail";
 
@@ -25,6 +27,8 @@ root.render(
           <Route path="/rank" element={<Rank />}></Route>
           <Route path="/waiting" element={<Waiting />}></Route>
           <Route path="/waiting/:id" element={<WaitingDetail />}></Route>
+          <Route path="/progress" element={<Progress />}></Route>
+          <Route path="/progress/:id" element={<ProgressDetail />}></Route>
           <Route path="/transaction" element={<Transaction />}></Route>
         </Route>
       </Routes>
