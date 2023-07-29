@@ -94,7 +94,7 @@ export const ProgressSection = () => {
                       <Bar width={content.barWidth} />
                     </FullBar>
                     <TypoWhite size="14px" top="7px" left="1px">
-                      누적 기부 {content.totalTokens}/{content.targetTokens}
+                      누적 기부 {content.totalDonation}원
                     </TypoWhite>
                   </Shadow>
                 </Contents>

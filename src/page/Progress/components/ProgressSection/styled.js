@@ -56,6 +56,7 @@ export const CategoryBox = styled.div`
   flex-shrink: 0;
   padding-left: 80px;
   padding-right: 80px;
+  padding-top: 30px;
 `;
 
 export const CategoryButton = styled.button`
