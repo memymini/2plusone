@@ -11,6 +11,8 @@ const fontWeight = css`
   font-weight: ${(props) => props.fontWeight || "600"};
 `;
 
+
+
 export const Root = styled.div``;
 
 export const BackContainer = styled.div`
@@ -22,15 +24,17 @@ export const BackContainer = styled.div`
   flex-direction: column;
 `;
 
+
+
 export const TopBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  width: 100vw;
-  height: 180px;
+  width: 115%;
+  height: 170px;
+  margin-left:0px;
   flex-shrink: 0;
-  margin-left:60px;
 `;
 
 export const Typo = styled.div`
@@ -46,21 +50,37 @@ export const Typo = styled.div`
   justify-content: left;
 `;
 
+
+
+
 export const GridContainer = styled.div`
   width: 100%;
-  height: 1000px;
+  height: 1000px; 
   display: grid;
-  grid-template-columns: 1000px 1fr;
-  background-color: transparent;
-    `;
-
-export const GridItem = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100px;
+  grid-template-columns: 900px 1fr;
   background-color: #fff;
   flex-direction: column;
-  align-items: center;
+
+  
+    `;
+
+  
+export const GridItem = styled.div`
+  display: flex;
+  width: 150%;
+  height: auto;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right:5000px;
+`;
+export const GridItem2 = styled.div`
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 export const ImageContainer = styled.div`
@@ -79,14 +99,19 @@ export const BigImage = styled.img`
 
 export const VoteContainer = styled.div`
   display: flex;
-  width: 364px;
-  height: 670px;
+  width: 340px;
+  height: auto;
   padding-bottom: 0px;
-  align-items: flex-start;
+  align-items:left;
+  padding: 10px;
+
   border-radius: 12px;
-  background: #fff;
+  flex-direction: column;
+  background: #fff;  
+  margin-left: 50px;
   box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.2);
 `;
+
 
 export const TextContainer = styled.div`
         align-items: flex-start;
@@ -97,12 +122,10 @@ export const TextContainer = styled.div`
         flex-direction: column;
         flex-shrink: 0;
         margin-top: 40px;
-x
        `;
 
 export const ButtonContainer = styled.div`
   display: flex;
-  width: 760px;
   flex-direction: row;
   align-items: center;
   gap:0px;
@@ -110,9 +133,18 @@ export const ButtonContainer = styled.div`
   margin-bottom:10px;
   background-color: transparent;
   justify-content: space-between;
-  width: 65%;
-
+  width: 50%;
 `;
+
+export const ButtonContainer2 = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:0px;
+  margin-bottom:10px;
+  margin-left:20px;
+  justify-content: space-between;
+  width:100;`;
 
 
 export const VoteCoinButton = styled.button`
@@ -190,12 +222,14 @@ margin-bottom: 0px;
 
 export const CommentContainer = styled.div`
   display: flex;
-  width: 1000px;
+  width: 648px;
   height: 100%;
   background-color: #fff;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   flex-shrink: 0;
+  margin-top: 20px;
+
     `;
 
     export const Line2 = styled.div`
@@ -207,5 +241,63 @@ export const CommentContainer = styled.div`
     margin-top: 0px;
     margin-bottom: 0px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     `;
+    export const ManagerContainer = styled.div`
+    display: flex;
+    width: 648px;
+    height: auto;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+`;
+export const VoteContainer2 = styled.div`
+  display: flex;
+  width: 200px;
+  height: auto;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+
+`;
+export const CommentContainer2 = styled.div`
+  display: flex;
+  width: 648px;
+  height: auto;
+
+  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: left;
+  margin-left:0px;
+`;  
+
+
+
+export const FullBar = styled.div`
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #d9d9d9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`;
+
+export const Bar = styled.div`
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: ${(props) => props.width || "350px"};
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #ff7425;
+`;
+
