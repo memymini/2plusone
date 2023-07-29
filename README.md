@@ -23,4 +23,4 @@
 - 이미지 슬라이더 구현을 위한~
   `npm i react-responsive-carousel`
 - semantic-ui-react(css 도우미) 사용을 위한 명령어
-  `npm install semantic-ui-react semantic-ui-css'
+  `npm install semantic-ui-react semantic-ui-css`
