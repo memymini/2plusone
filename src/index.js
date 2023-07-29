@@ -11,8 +11,8 @@ import { Progress } from "./page/Progress";
 import { ProgressDetail } from "./page/ProgressDetail";
 import { Waiting } from "./page/Waiting";
 import { WaitingDetail } from "./page/WaitingDetail";
-
 import { Transaction } from "./page/Transaction";
+import { Token } from "./page/Token";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -29,6 +29,7 @@ root.render(
           <Route path="/waiting/:id" element={<WaitingDetail />}></Route>
           <Route path="/progress" element={<Progress />}></Route>
           <Route path="/progress/:id" element={<ProgressDetail />}></Route>
+          <Route path="/token" element={<Token />}></Route>
           <Route path="/transaction" element={<Transaction />}></Route>
         </Route>
       </Routes>
