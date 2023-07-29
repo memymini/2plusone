@@ -48,6 +48,5 @@ export const BehindDetailcontents = ({id}) => {
         <More/>
       </TextGroup>
     </BigBox>
-
   );
 };
